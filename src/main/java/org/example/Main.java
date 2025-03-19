@@ -1,16 +1,31 @@
 package org.example;
 
+/**
+ * Clases de los calculos
+ *
+ * Autor: Jorge
+ * Versión: 1.0
+ *
+ * Esta clase contiene métodos para calcular el área de un círculo, el área de un cuadrado y la diferencia entre ambos.
+ *
+ */
 public class Main {
     public static void main(String[] args) {
         // Instanciar un cuadrado y un círculo con color
         Circulo circulo1 = new Circulo(3, "verde");
         Cuadrado cuadrado1 = new Cuadrado(3, 3, "rojo");
 
+
+
         // Calcular área del cuadrado (ladoA * ladoB)
         double area1 = getArea1(cuadrado1);
 
+
+
         // Calcular área del círculo (pi * r^2)
         double area2 = getArea2(circulo1);
+
+
 
         // Calcular diferencia entre áreas
         double diferencia = getDiferencia(area1 - area2, "Diferencia áreas: ");
